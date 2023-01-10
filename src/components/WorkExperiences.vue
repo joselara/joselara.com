@@ -5,7 +5,7 @@
 <template>
   <div class="mt-20">
     <Container>
-      <div class="flex justify-between items-end">
+      <div class="sm:flex justify-between items-end">
         <div class="text-3xl font-bold tracking-tight text-zinc-800 sm:text-4xl block">
           Work Experience
         </div>
