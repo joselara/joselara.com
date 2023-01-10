@@ -3,7 +3,7 @@
 
 <template>
   <OuterContainer>
-    <InnerContainer class="bg-white">
+    <InnerContainer>
       <slot />
     </InnerContainer>
   </OuterContainer>

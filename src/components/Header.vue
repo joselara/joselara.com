@@ -4,22 +4,16 @@ import DesktopNav from './DesktopNav.vue'
 
 <template>
   <div
-    class="pointer-events-none flex flex-col w-full bg-white"
+    class="pointer-events-none flex flex-col w-full bg-white border"
   >
-    <Container class="pt-3">
+    <Container class="pt-4">
       <div class="flex flex-1 justify-end md:justify-center">
-        <DesktopNav />
+        <!-- <DesktopNav /> -->
       </div>
     </Container>
-    <Container>
-      <div class="h-16 mt-10">
-        <div class="relative flex gap-4 w-full">
-          <div class="flex flex-1">
-            <Avatar />
-          </div>
-        </div>
-      </div>
-    </Container>
+  </div>
+  <div class="mt-10 mb-4">
+    <Avatar />
   </div>
 
   <slot />
