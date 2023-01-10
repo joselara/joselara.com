@@ -6,10 +6,6 @@ useHead({
   title: 'Jose Lara',
   meta: [
     { name: 'description', content: 'My name is Jose Lara and I am a full-stack web2 developer from Pasadena, California.' },
-    {
-      name: 'theme-color',
-      content: computed(() => isDark.value ? '#00aba9' : '#ffffff'),
-    },
   ],
   link: [
     {
