@@ -4,7 +4,7 @@ import DesktopNav from './DesktopNav.vue'
 
 <template>
   <div
-    class="pointer-events-none flex flex-col w-full bg-white border"
+    class="pointer-events-none flex flex-col"
   >
     <Container class="pt-4">
       <div class="flex flex-1 justify-end md:justify-center">
@@ -12,9 +12,11 @@ import DesktopNav from './DesktopNav.vue'
       </div>
     </Container>
   </div>
-  <div class="mt-10 mb-4">
-    <Avatar />
-  </div>
+  <Container>
+    <div class="mt-24 mb-4">
+      <Avatar />
+    </div>
+  </Container>
 
   <slot />
 </template>
