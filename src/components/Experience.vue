@@ -19,7 +19,7 @@ defineProps<{
         {{ title }}
       </div>
     </div>
-    <div class="text-sm sm:text-base">
+    <div class="text-sm sm:text-base  text-zinc-600">
       <div>
         {{ start }} &mdash; {{ end }}
       </div>
