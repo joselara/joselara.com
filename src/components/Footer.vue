@@ -11,7 +11,7 @@
     </OuterContainer>
     <Container>
       <div className="flex flex-col items-center justify-end gap-6 sm:flex-row">
-        <p className="text-sm text-zinc-400 dark:text-zinc-500">
+        <p className="text-sm text-zinc-400 dark:text-zinc-500 mb-4">
           &copy; {{ new Date().getFullYear() }} Jose Lara. All rights reserved.
         </p>
       </div>
