@@ -10,6 +10,7 @@ declare module '@vue/runtime-core' {
     Avatar: typeof import('./components/Avatar.vue')['default']
     Container: typeof import('./components/Container.vue')['default']
     DesktopNav: typeof import('./components/DesktopNav.vue')['default']
+    Experience: typeof import('./components/Experience.vue')['default']
     Footer: typeof import('./components/Footer.vue')['default']
     Header: typeof import('./components/Header.vue')['default']
     InnerContainer: typeof import('./components/InnerContainer.vue')['default']
