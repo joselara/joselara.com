@@ -18,6 +18,7 @@ import Shiki from 'markdown-it-shiki'
 import VueMacros from 'unplugin-vue-macros/vite'
 
 export default defineConfig({
+  assetsInclude: ['**/*.pdf'],
   resolve: {
     alias: {
       '~/': `${path.resolve(__dirname, 'src')}/`,
