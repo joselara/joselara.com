@@ -3,9 +3,10 @@ defineProps<{
   name: string
   title: string
   location: string
-  description: string
+  description?: string
   start: string
   end: string
+  bullets?: string[]
 }>()
 </script>
 
@@ -19,12 +20,21 @@ defineProps<{
         {{ title }}
       </div>
     </div>
-    <div class="text-sm sm:text-base  text-zinc-600">
+    <div class="text-sm sm:text-base text-zinc-600">
       <div>
         {{ start }} &mdash; {{ end }}
       </div>
       <div>{{ location }}</div>
     </div>
-    <p>{{ description }}</p>
+    <div class="">
+      <p v-if="description">
+        {{ description }}
+      </p>
+      <ul v-if="bullets" role="list" class="list-disc pl-4">
+        <li v-for="(bullet, index) in bullets" :key="index">
+          {{ bullet }}
+        </li>
+      </ul>
+    </div>
   </div>
 </template>
