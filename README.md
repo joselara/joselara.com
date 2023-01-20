@@ -1,3 +1,6 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/12290e10-38a8-4ca9-9b65-3c9215b6c268/deploy-status)](https://app.netlify.com/sites/rococo-truffle-21c342/deploys)
+
+
 <p align='center'>
   <img src='https://user-images.githubusercontent.com/11247099/154486817-f86b8f20-5463-4122-b6e9-930622e757f2.png' alt='Vitesse - Opinionated Vite Starter Template' width='600'/>
 </p>
