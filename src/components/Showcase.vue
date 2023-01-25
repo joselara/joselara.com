@@ -19,8 +19,12 @@ const onShow = () => {
 }
 
 const showMultiple = (imgIdx = 0) => {
-  imgsRef.value = images
-  indexRef.value = imgIdx // index of imgList
+  imgsRef.value = Object.entries(images).map(img => ({
+    title: 'Real Data Strategies',
+    src: img[1],
+  }))
+
+  indexRef.value = imgIdx
   onShow()
 }
 const onHide = () => (visibleRef.value = false)
@@ -55,7 +59,6 @@ const onHide = () => (visibleRef.value = false)
       :imgs="imgsRef"
       :index="indexRef"
       :loop="true"
-      :move-disabled="true"
       @hide="onHide"
     >
       <template #toolbar>
