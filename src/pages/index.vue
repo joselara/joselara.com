@@ -18,7 +18,7 @@ defineOptions({
   <Container>
     <Socials />
   </Container>
-
+  <Showcase />
   <Container>
     <WorkExperiences />
   </Container>

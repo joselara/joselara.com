@@ -20,6 +20,7 @@ specifiers:
   eslint: ^8.29.0
   eslint-plugin-cypress: ^2.12.1
   https-localhost: ^4.7.1
+  install: ^0.13.0
   markdown-it-link-attributes: ^4.0.1
   markdown-it-shiki: ^0.7.2
   nprogress: ^0.2.0
@@ -47,6 +48,7 @@ specifiers:
   vitest: ^0.25.7
   vue: ^3.2.45
   vue-demi: ^0.13.11
+  vue-easy-lightbox: ^1.11.0
   vue-i18n: ^9.2.2
   vue-router: ^4.1.6
   vue-tsc: ^1.0.13
@@ -56,12 +58,14 @@ dependencies:
   '@vueuse/core': 9.6.0_vue@3.2.45
   '@vueuse/head': 1.0.22_vue@3.2.45
   autoprefixer: 10.4.13
+  install: 0.13.0
   nprogress: 0.2.0
   pinia: 2.0.28_prq2uz4lho2pwp6irk4cfkrxwu
   postcss-focus-visible: 6.0.4
   tailwindcss: 3.2.4
   vue: 3.2.45
   vue-demi: 0.13.11_vue@3.2.45
+  vue-easy-lightbox: 1.11.0_vue@3.2.45
   vue-i18n: 9.2.2_vue@3.2.45
   vue-router: 4.1.6_vue@3.2.45
 
@@ -5899,6 +5903,11 @@ packages:
     engines: {node: ^12.13.0 || ^14.15.0 || >=16.0.0}
     dev: true
 
+  /install/0.13.0:
+    resolution: {integrity: sha512-zDml/jzr2PKU9I8J/xyZBQn8rPCAY//UOYNmR01XwNwyfhEWObo2SWfSl1+0tm1u6PhxLwDnfsT/6jB7OUxqFA==}
+    engines: {node: '>= 0.10'}
+    dev: false
+
   /internal-slot/1.0.3:
     resolution: {integrity: sha512-O0DB1JC/sPyZl7cIo78n5dR7eUSwwpYPiXRhTzNxZVAMUuB8vlnRFyLxdrVToks6XPLVnFfbzaVd5WLjhgg+vA==}
     engines: {node: '>= 0.4'}
@@ -9274,6 +9283,15 @@ packages:
         optional: true
     dependencies:
       vue: 3.2.45
+
+  /vue-easy-lightbox/1.11.0_vue@3.2.45:
+    resolution: {integrity: sha512-t9ouC2rHz/VMt/XSbnVgkED/7Dqe/DHrX6mW4AUj5Kt1PSr3czVk+ecBtF/Q4ivmSdkNJRk2/6D5PGcwxJuozQ==}
+    engines: {node: '>=14.18.3'}
+    peerDependencies:
+      vue: ^3.0.0
+    dependencies:
+      vue: 3.2.45
+    dev: false
 
   /vue-eslint-parser/9.0.3_eslint@8.29.0:
     resolution: {integrity: sha512-yL+ZDb+9T0ELG4VIFo/2anAOz8SvBdlqEnQnvJ3M7Scq56DvtjY0VY88bByRZB0D4J0u8olBcfrXTVONXsh4og==}
