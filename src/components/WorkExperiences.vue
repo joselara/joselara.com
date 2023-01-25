@@ -22,7 +22,7 @@ const downloadCV = () => {
     <Container>
       <div class="sm:flex justify-between items-end">
         <div class="text-3xl font-bold tracking-tight text-zinc-800 sm:text-4xl block">
-          Work Experience
+          Experience
         </div>
         <div class="inline-block">
           <a
