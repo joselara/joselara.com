@@ -6,7 +6,7 @@ useHead({
   title: 'Jose Lara – Software Designer',
   meta: [
     { name: 'description', content: 'Hi, I\'m Jose. I\'m a full-stack web2 developer from Pasadena, California.' },
-    { property: 'og:image', content: new URL('og.svg', import.meta.url).href },
+    { property: 'og:image', content: '/og.svg' },
   ],
   link: [
     {
