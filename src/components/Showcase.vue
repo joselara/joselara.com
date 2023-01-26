@@ -1,17 +1,31 @@
 <script setup lang="ts">
+import { useTimeoutPoll } from '@vueuse/core'
+import { promiseTimeout } from '@vueuse/shared'
+
 import rdsApp1 from '~/assets/rds-app-2.png'
 import rdsApp2 from '~/assets/rds-app-4.png'
 import rdsApp3 from '~/assets/rds-app-7.png'
 import rdsApp4 from '~/assets/rds-app-8.png'
+import lalaApp1 from '~/assets/lala-1.png'
+import lalaApp2 from '~/assets/lala-2.png'
+import lalaApp3 from '~/assets/lala-3.png'
+import lalaApp4 from '~/assets/lala-4.png'
+import lalaApp5 from '~/assets/lala-5.png'
 
-const rotations = ['rotate-2', '-rotate-2', 'rotate-2', 'rotate-2', '-rotate-2']
+const rotations = ['rotate-2', '-rotate-2', 'rotate-2', 'rotate-2', '-rotate-2', 'rotate-2', '-rotate-2']
 
-const images = [
+const rdsImages = [
   rdsApp1, rdsApp2, rdsApp3, rdsApp4,
 ]
 
+const lalaImages = [
+  lalaApp1, lalaApp2, lalaApp3, lalaApp4, lalaApp5,
+]
+
+const allImages = ref(lalaImages.concat(rdsImages).sort(() => 0.5 - Math.random()))
+
 const visibleRef = ref(false)
-const indexRef = ref(0) // default 0
+const indexRef = ref(0)
 const imgsRef = ref([])
 
 const onShow = () => {
@@ -19,15 +33,30 @@ const onShow = () => {
 }
 
 const showMultiple = (imgIdx = 0) => {
-  imgsRef.value = Object.entries(images).map(img => ({
-    title: 'Real Data Strategies',
-    src: img[1],
-  }))
+  imgsRef.value = [
+    ...Object.entries(rdsImages).map(img => ({
+      title: 'Real Data Strategies',
+      src: img[1],
+    })),
+    ...Object.entries(lalaImages).map(img => ({
+      title: 'Lalapoint',
+      src: img[1],
+    })),
+  ]
 
   indexRef.value = imgIdx
   onShow()
 }
 const onHide = () => (visibleRef.value = false)
+
+const rotateImages = async () => {
+  await promiseTimeout(5000)
+  allImages.value.unshift(allImages.value.pop())
+}
+
+const { pause, resume } = useTimeoutPoll(rotateImages, 5000)
+
+onMounted(() => resume())
 </script>
 
 <template>
@@ -42,10 +71,10 @@ const onHide = () => (visibleRef.value = false)
       </Container>
     </Container>
     <div className="mt-16 sm:mt-20">
-      <div className="-my-4 flex justify-center gap-5 overflow-hidden py-4 sm:gap-8">
+      <div className="-my-4 flex justify-center gap-5 overflow-hidden py-4 sm:gap-8" @mouseenter="pause()" @mouseleave="resume()">
         <div
-          v-for="(image, imageIdx) in images" :key="imageIdx"
-          class="relative aspect-[9/10] w-44 flex-none overflow-hidden rounded-xl bg-zinc-100 dark:bg-zinc-800 sm:w-72 sm:rounded-2xl border shadow-lg"
+          v-for="(image, imageIdx) in allImages" :key="imageIdx"
+          class="relative cursor-pointer aspect-[9/10] w-44 flex-none overflow-hidden rounded-xl bg-zinc-100 dark:bg-zinc-800 sm:w-72 sm:rounded-2xl border shadow-lg"
           :class="rotations[imageIdx % rotations.length]"
           @click="showMultiple(imageIdx)"
         >
