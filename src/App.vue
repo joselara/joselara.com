@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import ogImg from '~/assets/og.svg'
+
 // https://github.com/vueuse/head
 // you can use this to manipulate the document head in any components,
 // they will be rendered correctly in the html results with vite-ssg
@@ -6,7 +8,7 @@ useHead({
   title: 'Jose Lara – Software Designer',
   meta: [
     { name: 'description', content: 'Hi, I\'m Jose. I\'m a full-stack web2 developer from Pasadena, California.' },
-    { property: 'og:image', content: new URL('~/assets/og.svg', import.meta.url).href },
+    { property: 'og:image', content: new URL(ogImg, import.meta.url).href },
   ],
   link: [
     {
