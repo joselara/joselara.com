@@ -9,7 +9,7 @@
       <Header>
         <Container>
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl">
-            Software Enginnier, Co-founder and Proptech creator
+            Software Engineer, Co-founder and Proptech creator
           </h1>
         </Container>
       </Header>
