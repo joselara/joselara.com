@@ -20,6 +20,7 @@
     "@vueuse/head": "^1.0.22",
     "autoprefixer": "^10.4.12",
     "install": "^0.13.0",
+    "logrocket": "^3.0.1",
     "nprogress": "^0.2.0",
     "pinia": "^2.0.28",
     "postcss-focus-visible": "^6.0.4",

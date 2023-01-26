@@ -21,6 +21,7 @@ specifiers:
   eslint-plugin-cypress: ^2.12.1
   https-localhost: ^4.7.1
   install: ^0.13.0
+  logrocket: ^3.0.1
   markdown-it-link-attributes: ^4.0.1
   markdown-it-shiki: ^0.7.2
   nprogress: ^0.2.0
@@ -59,6 +60,7 @@ dependencies:
   '@vueuse/head': 1.0.22_vue@3.2.45
   autoprefixer: 10.4.13
   install: 0.13.0
+  logrocket: 3.0.1
   nprogress: 0.2.0
   pinia: 2.0.28_prq2uz4lho2pwp6irk4cfkrxwu
   postcss-focus-visible: 6.0.4
@@ -6541,6 +6543,10 @@ packages:
       slice-ansi: 4.0.0
       wrap-ansi: 6.2.0
     dev: true
+
+  /logrocket/3.0.1:
+    resolution: {integrity: sha512-jOWG+jEzobKVxGytzZ+4KGm2kiMQMRTHab2uDWQyVZcHfEF38BlCH1yjQVY4LCmuQUwZitP9biMzJZnyUQ0dtQ==}
+    dev: false
 
   /loupe/2.3.4:
     resolution: {integrity: sha512-OvKfgCC2Ndby6aSTREl5aCCPTNIzlDfQZvZxNUrBrihDhL3xcrYegTblhmEiCrg2kKQz4XsFIaemE5BF4ybSaQ==}
