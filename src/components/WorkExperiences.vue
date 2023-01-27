@@ -26,7 +26,7 @@ const downloadCV = () => {
         </div>
         <div class="inline-block">
           <a
-            class="inline-flex items-center gap-2 justify-center rounded-md py-2 px-5 text-sm outline-offset-2 transition active:transition-none bg-zinc-50 font-medium text-zinc-900 hover:bg-zinc-100 active:bg-zinc-100 active:text-zinc-900/60 group mt-6 w-full border"
+            class="inline-flex items-center shadow-sm gap-2 justify-center rounded-md py-2 px-5 text-sm outline-offset-2 transition active:transition-none bg-zinc-50 font-medium text-zinc-900 hover:bg-zinc-100 active:bg-zinc-100 active:text-zinc-900/60 group mt-6 w-full border"
             :href="`${filename}.pdf`"
             @click.prevent="downloadCV"
           >
