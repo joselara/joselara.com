@@ -49,7 +49,7 @@
     "https-localhost": "^4.7.1",
     "markdown-it-link-attributes": "^4.0.1",
     "markdown-it-shiki": "^0.7.2",
-    "pnpm": "^7.18.1",
+    "pnpm": "^7.33.4",
     "shiki": "^0.11.1",
     "taze": "^0.8.4",
     "typescript": "^4.9.4",
