@@ -9,7 +9,7 @@ defineOptions({
     <div class="mt-10">
       <Container>
         <p class="text-zinc-600">
-          Experienced software designer with 14+ years in software architecture, network design, and coding. Seeking opportunities to collaborate with a team towards the goal of creating exceptional products. When not programming, I enjoy deploying containerized environments and spending time with my dogs, Lola and Fluffy.
+          Highly skilled software architect with over 14 years of experience in software design, network architecture, and coding, passionate about solving complex challenges and creating innovative solutions. I am actively seeking opportunities to collaborate with exceptional teams in the pursuit of cutting-edge product development. Beyond my professional pursuits, I thrive in the world of containerized environments and cherish moments with my two little pups, Lola and Fluffy. My mission is to continue pushing the boundaries of technology while fostering a collaborative and innovative work culture.
         </p>
       </Container>
     </div>
