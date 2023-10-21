@@ -9,7 +9,7 @@
       <Header>
         <Container>
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl">
-            Software Engineer, Co-founder and Proptech creator
+            Software Expertise, Startup Spirit: Crafting the Next Generation of Digital Solutions
           </h1>
         </Container>
       </Header>
