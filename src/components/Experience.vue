@@ -1,6 +1,7 @@
 <script setup lang="ts">
 defineProps<{
   name: string
+  // hidden: boolean
   title: string
   location: string
   description?: string

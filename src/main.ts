@@ -1,6 +1,6 @@
 import { ViteSSG } from 'vite-ssg'
 import { setupLayouts } from 'virtual:generated-layouts'
-import Previewer from 'virtual:vue-component-preview'
+import PreviewServer  from 'vite'
 import LogRocket from 'logrocket'
 import App from './App.vue'
 import type { UserModule } from './types'
@@ -21,7 +21,6 @@ export const createApp = ViteSSG(
     // install all modules under `modules/`
     Object.values(import.meta.glob<{ install: UserModule }>('./modules/*.ts', { eager: true }))
       .forEach(i => i.install?.(ctx))
-    ctx.app.use(Previewer)
     LogRocket.init('nwclno/joselara')
   },
 )
