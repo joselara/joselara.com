@@ -79,7 +79,6 @@ onMounted(() => resume())
           @click="showMultiple(imageIdx)"
         >
           <img :src="image" class="absolute inset-0 h-full w-full object-cover">
-          />
         </div>
       </div>
     </div>
