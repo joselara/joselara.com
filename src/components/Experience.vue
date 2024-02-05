@@ -27,7 +27,7 @@ defineProps<{
       </div>
       <div>{{ location }}</div>
     </div>
-    <div class="">
+    <div class="text-zinc-600">
       <p v-if="description">
         {{ description }}
       </p>
