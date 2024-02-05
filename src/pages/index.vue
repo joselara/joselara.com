@@ -8,9 +8,24 @@ defineOptions({
   <Container>
     <div class="mt-10">
       <Container>
-        <p class="text-zinc-600">
-          Highly skilled software architect with over 15 years of experience in software design, network architecture, and coding, passionate about solving complex challenges and creating innovative solutions. I am actively seeking opportunities to collaborate with exceptional teams in the pursuit of cutting-edge product development. My mission is to continue pushing the boundaries of technology while fostering a collaborative and innovative work culture. Beyond my professional pursuits, I thrive in the world of containerized environments and cherish moments with my two little pups, Lola and Fluffy.
-        </p>
+        <div class="space-y-6">
+          <div class="text-zinc-600">
+            As a highly skilled software architect with over 15 years of
+            experience, I specialize in software design, network
+            architecture, and coding. I am deeply passionate about tackling
+            complex challenges and crafting innovative solutions. Currently,
+            I am actively seeking opportunities to collaborate with
+            exceptional teams in the pursuit of cutting-edge product
+            development.
+          </div>
+          <div class="text-zinc-600">
+            My mission is to consistently push the boundaries of technology
+            while fostering a collaborative and innovative work culture.
+            Beyond my professional pursuits, I excel in navigating
+            containerized environments and treasure moments spent with my
+            two little pups, Lola and Fluffy.
+          </div>
+        </div>
       </Container>
     </div>
   </Container>
