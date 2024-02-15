@@ -44,11 +44,11 @@ const downloadCV = () => {
           end="Present"
           location="Los Angeles, California / On-site"
           :bullets="[
-            'Currently upgrading a legacy WordPress corporate site to modern standards using React and Next.js framework, with ongoing feature additions and legacy code migration.',
-            'Leading daily stand-ups with an offshore development team to streamline project updates and issue tracking.',
-            'Managing AWS infrastructure to ensure smooth operations and conducting routine maintenance.',
-            'Implementing a weekly reporting system for inbound leads by Experian.',
-            'Establishing secure reporting for SoFi using encryption with PGP for enhanced data protection.'
+            'Revitalized an outdated WordPress corporate website with the use of React and Next.js framework, continuously integrating new features and migrating legacy code.',
+            'Established a Headless CMS by utilizing Strapi, paired with Next.js on the front-end for the corporate website, which facilitated seamless content management and updates.',
+            'Spearheaded daily stand-up meetings with an offshore development team, enhancing project updates and issue tracking.',
+            'Administered AWS infrastructure, ensuring smooth operations through regular maintenance.',
+            'Devised a weekly, secure reporting system for incoming leads from Experian and inbound leads from SoFi Technologies using PGP encryption, enhancing data protection.'
           ]"
         />
         <Experience
@@ -58,11 +58,11 @@ const downloadCV = () => {
           end="December 2022"
           location="Pasadena, California / Hybrid"
           :bullets="[
-            'Developed core components from data partners pipeline from scratch. Implemented systems for digital marketing initiatives: Generating video, landing pages with lead capture, presentation materials and graphics delivered ready-to-share on any media channel.',
-            'System designed the stack using Laravel, Serverless Framework, Node.js, and Vue2/3. Utilized processing power tools such as AWS Lambda and EC2 for optimal performance. ',
-            'Performed thorough code reviews to ensure high-quality and maintainable code. Managed release branching, code merges, reverts, and versioning using GitHub Organizations. ',
-            'Set up procedures to streamline and automate app development and deployment using Docker containers. ',
-            'Solid understanding of networking concepts such as VPN, DNS, and load balancing, as well as experience in configuring and maintaining network infrastructure and ensuring high availability and performance.',
+            'Built the core components of a data partners pipeline from scratch, laying the groundwork for future development and expansion.',
+            'Engineered systems for digital marketing initiatives, including video generation, lead capture landing pages, presentation materials, and graphics, all designed for easy sharing across various media channels.',
+            'Designed the technical stack using Laravel, Serverless Framework, Node.js, and Vue2/3, demonstrating a strong understanding of multiple technologies and frameworks.',
+            'Leveraged AWS Lambda and EC2 to optimize processing power and performance, demonstrating proficiency with cloud computing platforms.',
+            'Conducted thorough code reviews to ensure high-quality, maintainable code and managed release branching, code merges, reverts, and versioning using GitHub Organizations, demonstrating strong version control skills.'
           ]"
         />
         <Experience
@@ -72,9 +72,9 @@ const downloadCV = () => {
           end="June 2021"
           location="Brea, California / Remote"
           :bullets="[
-            'Developed a  real-time analytical app using Laravel, Tailwind, Vue3 and Intertia.js, allowing users to view monthly home sales data from over 200+ MLS datasets. Utilized Laravel to set up the backend infrastructure for the app. Incorporated Inertia.js, Vue 3 and Tailwind for the front-end of the application. Monitored the app\'s performance and scalability, and made adjustments as needed to ensure optimal performance.',
-            'Migrated legacy Microsoft Access databases to Aurora MySQL, modernizing the system and improving data accessibility. Conducted a thorough assessment of the existing Access databases to identify data structure, relationships, and dependencies. ',
-            'Set up a data pipeline for processing raw sales data from over 200 MLS sources on a daily basis. Implemented data validation, cleaning, and error handling to ensure data accuracy and consistency',
+            'Developed a real-time analytical application utilizing Laravel, Tailwind, Vue3, and Inertia.js. This application enables users to analyze monthly home sales data from more than 200 MLS datasets. Leveraging Laravel for a robust backend infrastructure, and used Inertia.js, Vue3, and Tailwind to create a dynamic and engaging front-end.',
+            'Successfully migrated legacy Microsoft Access databases to Aurora MySQL, a modernization that greatly enhanced system efficiency and improved data accessibility. This process included a meticulous assessment of the existing Access databases to identify and understand their data structure, relationships, and dependencies.',
+            'Implemented a data pipeline for daily processing of raw sales data from over 200 MLS sources. This included data validation, cleaning, and error handling to ensure data accuracy and consistency.'
           ]"
         />
         <Experience
@@ -84,10 +84,11 @@ const downloadCV = () => {
           end="May 2018"
           location="San Francisco, California / On-site"
           :bullets="[
-            'Facilitated the successful migration of three tech departments for John Aaroe Group, Partner Trust, and Gibson international ecosystems to the Pacific Union LA division brand intranet developed by my department. Worked closely with the IT teams to implement a comprehensive migration plan.',
-            'Project managed the rebranding of the company\'s user-facing platform, intranet, and internal marketing tools in collaboration with an agency partner. Worked closely with the partners to define project scope, timelines, and deliverables. Communicated regularly with all stakeholders to ensure the project was on track and delivered on time. ',
-            'Collaborated with C-Suite management to comprehensively review the company\'s organizational structure and budgeting processes and identified areas for improvement.',
+            'Orchestrated the complex migration of three tech departments for John Aaroe Group, Partner Trust, and Gibson International ecosystems to the Pacific Union LA division brand intranet. This project involved close collaboration with IT teams to devise and execute a holistic migration strategy, ensuring a seamless transition.',
+            'Oversaw the rebranding of the company\'s user-facing platform, intranet, and internal marketing tools, working in tandem with an agency partner. Defined project scope, timelines, and deliverables, maintaining regular communication with all stakeholders to ensure timely and successful project completion.',
+            'Engaged in a thorough evaluation of the company\'s organizational structure and budgeting processes with C-suite management, pinpointing areas for enhancement and streamlining.'
           ]"
+
         />
         <Experience
           name="John Aaroe Group"
@@ -96,11 +97,10 @@ const downloadCV = () => {
           end="December 2016"
           location="Beverly Hills, California / On-site"
           :bullets="[
-            'Created and developed an internal intranet platform using Laravel for a company with 500 of the leading brokers and agents in Los Angeles. Designing the overall architecture and layout of the platform, including the user interface, navigation, and functionality.',
-            'Maintained and managed the company\'s consumer-facing app powered by Ruby on Rails (RoR) that processes listing and sale data from some of the nation\'s largest IDX systems involving several tasks such as monitoring and troubleshooting any issues, optimizing performance to ensure it could handle high traffic and large amounts of data, keeping backups of data to rollback in case of issues, collaborating with other teams such as design and marketing, business development to improve performance and user experience. ',
-            'Developed internal tools for users to create custom newsletters that integrate with third-party APIs, such as Mailchimp and other CRMs. Created an interface for users to easily create and customize newsletters to send to recipients.',
-            'Developed an internal video generator, harnessing FFMPEG and Puppeteer, for listings with a front-end interface that allows users to select photos and input copy, and then sent an email with the generated video to the user to publish on social media channels. ',
-            'Setup a static website for every new property listing for the company and agent with its own unique subdomain URL. Include a gallery, documents and video of the subject property that was managed by office staff and integrated with the company site and intranet. ',
+            'Designed, created, and developed an internal intranet platform using Laravel for a company, serving 500 of the leading brokers and agents in Los Angeles. This included designing the platform\'s overall architecture and layout, including the user interface, navigation, and functionality.',
+            'Maintained and managed the company\'s consumer-facing app, powered by Ruby on Rails (RoR), which processed listing and sale data from some of the nation\'s largest IDX systems. Responsibilities included monitoring and troubleshooting any issues, optimizing performance to handle high traffic and large amounts of data, maintaining backups of data for rollback in case of issues, and collaborating with other teams like design, marketing, and business development to improve performance and user experience.',
+            'Developed internal tools that allowed users to create custom newsletters integrated with third-party APIs, such as Mailchimp and other CRMs. This involved creating an interface for users to easily create and customize newsletters.',
+            'Developed an internal video generator, using FFMPEG and Puppeteer, for listings with a robust user interface that allowed users to select media and import data from other sources.'
           ]"
         />
       </div>
