@@ -39,7 +39,7 @@ const downloadCV = () => {
       <div class="grid gap-14 mt-6">
         <Experience
           name="Seek Capital"
-          title="Full Stack Software Engineer"
+          title="Full Stack Developer"
           start="February 2023"
           end="Present"
           location="Los Angeles, California / On-site"
