@@ -41,7 +41,7 @@ const downloadCV = () => {
           name="Seek Capital"
           title="Full Stack Developer"
           start="February 2023"
-          end="Present"
+          end="January 2024"
           location="Los Angeles, California / On-site"
           :bullets="[
             'Revitalized an outdated WordPress corporate website with the use of React and Next.js framework, continuously integrating new features and migrating legacy code.',
@@ -55,7 +55,7 @@ const downloadCV = () => {
           name="Lalapoint"
           title="Co-founder + CTO"
           start="May 2018"
-          end="December 2022"
+          end="September 2022"
           location="Pasadena, California / Hybrid"
           :bullets="[
             'Built the core components of a data partners pipeline from scratch, laying the groundwork for future development and expansion.',

@@ -15,10 +15,10 @@ defineProps<{
   <div class="grid gap-3">
     <div>
       <div class="text-2xl font-bold tracking-tight text-zinc-800 sm:text-3xl">
-        {{ name }}
+        {{ title }}
       </div>
       <div class="text-xl font-semibold tracking-tight text-zinc-600 sm:text-2xl">
-        {{ title }}
+        {{ name }}
       </div>
     </div>
     <div class="text-sm sm:text-base text-zinc-600">
