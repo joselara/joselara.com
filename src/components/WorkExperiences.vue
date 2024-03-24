@@ -40,8 +40,8 @@ const downloadCV = () => {
         <Experience
           name="Seek Capital"
           title="Full Stack Developer"
-          start="February 2023"
-          end="January 2024"
+          start="2023"
+          end="2024"
           location="Los Angeles, California / On-site"
           :bullets="[
             'Revitalized an outdated WordPress corporate website with the use of React and Next.js framework, continuously integrating new features and migrating legacy code.',
@@ -54,8 +54,8 @@ const downloadCV = () => {
         <Experience
           name="Lalapoint"
           title="Co-founder + CTO"
-          start="May 2018"
-          end="September 2022"
+          start="2018"
+          end="2022"
           location="Pasadena, California / Hybrid"
           :bullets="[
             'Built the core components of a data partners pipeline from scratch, laying the groundwork for future development and expansion.',
@@ -68,8 +68,8 @@ const downloadCV = () => {
         <Experience
           name="Real Data Strategies"
           title="Engineering &amp; Technical Lead"
-          start="May 2018"
-          end="June 2021"
+          start="2018"
+          end="2022"
           location="Brea, California / Remote"
           :bullets="[
             'Developed a real-time analytical application utilizing Laravel, Tailwind, Vue3, and Inertia.js. This application enables users to analyze monthly home sales data from more than 200 MLS datasets. Leveraging Laravel for a robust backend infrastructure, and used Inertia.js, Vue3, and Tailwind to create a dynamic and engaging front-end.',
@@ -80,8 +80,8 @@ const downloadCV = () => {
         <Experience
           name="Pacific Union International"
           title="Full Stack Developer"
-          start="January 2017"
-          end="May 2018"
+          start="2017"
+          end="2018"
           location="San Francisco, California / On-site"
           :bullets="[
             'Orchestrated the complex migration of three tech departments for John Aaroe Group, Partner Trust, and Gibson International ecosystems to the Pacific Union LA division brand intranet. This project involved close collaboration with IT teams to devise and execute a holistic migration strategy, ensuring a seamless transition.',
@@ -93,8 +93,8 @@ const downloadCV = () => {
         <Experience
           name="John Aaroe Group"
           title="Full Stack Developer"
-          start="January 2014"
-          end="December 2016"
+          start="2014"
+          end="2016"
           location="Beverly Hills, California / On-site"
           :bullets="[
             'Designed, created, and developed an internal intranet platform using Laravel for a company, serving 500 of the leading brokers and agents in Los Angeles. This included designing the platform\'s overall architecture and layout, including the user interface, navigation, and functionality.',
