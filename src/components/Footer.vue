@@ -10,11 +10,13 @@
       </div>
     </OuterContainer>
     <Container>
-      <div className="flex flex-col items-center justify-end gap-6 sm:flex-row">
-        <p className="text-sm text-zinc-400 dark:text-zinc-500 mb-4">
-          &copy; {{ new Date().getFullYear() }} Jose Lara. All rights reserved.
+    <Container>
+      <div className="flex flex-col items-center gap-6 sm:flex-row">
+        <p className="text-sm text-zinc-400 dark:text-zinc-500 pb-12 text-center tracking-tight">
+          &copy; {{ new Date().getFullYear() }} Jose Lara. 115 West California Boulevard #114, Pasadena, CA 91105. All rights reserved.
         </p>
       </div>
     </Container>
+  </Container>
   </footer>
 </template>
