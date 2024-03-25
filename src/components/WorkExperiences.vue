@@ -18,9 +18,9 @@ const downloadCV = () => {
 </script>
 
 <template>
-  <div class="mt-20">
+  <div class="mt-14">
     <Container>
-      <div class="sm:flex justify-between items-end border-t border-zinc-200 pt-12">
+      <div class="sm:flex justify-between items-end border-t border-zinc-200 pt-14">
         <div class="text-xl text-zinc-800 sm:text-xl font-bold block">
           Experience
         </div>
