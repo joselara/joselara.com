@@ -70,8 +70,8 @@ onMounted(() => resume())
     <Container>
       <Container>
         <div class="sm:flex justify-between items-end">
-          <div class="text-3xl font-bold tracking-tight text-zinc-800 sm:text-4xl block">
-            Showreel of Software Solutions
+          <div class="ext-xl text-zinc-800 sm:text-xl font-bold block">
+            Showcase
           </div>
         </div>
       </Container>
@@ -81,7 +81,6 @@ onMounted(() => resume())
         <div
           v-for="(image, imageIdx) in allImages" :key="imageIdx"
           class="relative cursor-pointer aspect-[9/10] w-44 flex-none overflow-hidden rounded-xl bg-zinc-100 dark:bg-zinc-800 sm:w-72 sm:rounded-2xl border shadow-lg"
-          :class="rotations[imageIdx % rotations.length]"
           @click="showMultiple(imageIdx)"
         >
           <img :src="image" class="absolute inset-0 h-full w-full object-cover">

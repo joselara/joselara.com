@@ -25,7 +25,7 @@ defineProps<{
           {{ description }}
         </p>
         <ul v-if="bullets" role="list" class="list-disc pl-4 -ml-4">
-          <li v-for="(bullet, index) in bullets" :key="index" class="mb-2">
+          <li v-for="(bullet, index) in bullets" :key="index" class="mb-2 tracking-tight leading-relaxed">
             {{ bullet }}
           </li>
         </ul>

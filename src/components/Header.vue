@@ -10,7 +10,7 @@ import Socials from './Socials.vue'
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl">
             Jose Lara
           </h1>
-          <h2 className="text-xl tracking-tight text-zinc-500 sm:text-2xl uppercase font-semibold mt-6">
+          <h2 className="text-xl tracking-tight text-zinc-500 sm:text-2xl font-semibold mt-6">
             Software Engineer
           </h2>
         </div>
