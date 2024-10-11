@@ -1,8 +1,12 @@
 kind: pipeline
-type: ssh
+type: docker
 name: default
-#
+
 steps:
-  - name: hello
+  - name: test-runner
+    image: alpine
     commands:
-      - echo "Hello, World!"
+      - echo "Hello, Drone!"
+      - echo "Running tests..."
+      - uname -a
+      - echo "Tests completed."
