@@ -1,11 +1,11 @@
 kind: pipeline
 type: docker
-name: default
+name: test-pipeline
 
 steps:
-  - name: build
+  - name: test
     image: alpine
-    environment:
-      SERVER_HOST: ${DRONE_SERVER_HOST} # Ensure this is set correctly
     commands:
-      - echo "Building project..."
+      - echo "Starting tests..."
+      - uname -a   # Outputs system information to confirm the runner
+      - echo "Tests completed."
