@@ -3,10 +3,9 @@ type: docker
 name: default
 
 steps:
-  - name: test-runner
+  - name: build
     image: alpine
+    environment:
+      SERVER_HOST: ${DRONE_SERVER_HOST} # Ensure this is set correctly
     commands:
-      - echo "Hello, Drone!"
-      - echo "Running tests..."
-      - uname -a
-      - echo "Tests completed."
+      - echo "Building project..."
