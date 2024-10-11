@@ -1,11 +1,15 @@
+---
 kind: pipeline
 type: docker
-name: test-pipeline
-#
+name: hello-world
 steps:
-  - name: test
-    image: alpine
-    commands:
-      - echo "Starting tests..."
-      - uname -a   # Outputs system information to confirm the runner
-      - echo "Tests completed."
+- name: docker
+  image: plugins/docker
+  settings:
+    repo: joselara9/hello-world
+    username:
+     from_secret: docker_username
+    password:
+     from_secret: docker_password
+    tags:
+     - latest
