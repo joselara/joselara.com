@@ -1,7 +1,7 @@
 kind: pipeline
 type: ssh
 name: default
-
+#
 steps:
   - name: hello
     commands:
