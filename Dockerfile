@@ -1,20 +1,32 @@
-# 1. Use an official Node.js runtime as the base image
+# Use an official Node.js runtime as the base image
 FROM node:18
 
-# 2. Set the working directory inside the container
+# Set the working directory inside the container
 WORKDIR /app
 
-# 3. Copy package.json and package-lock.json to leverage Docker cache
-COPY package*.json ./
+# Copy package.json and pnpm-lock.yaml (if it exists)
+COPY package.json pnpm-lock.yaml* ./
 
-# 4. Install the application dependencies
-RUN npm install
+# Install pnpm
+RUN npm install -g pnpm
 
-# 5. Copy the rest of your application's code to the container
+# Install the application dependencies
+RUN pnpm install
+
+# Copy the rest of your application's code to the container
 COPY . .
 
-# 6. Expose the port your app runs on (optional, but recommended)
-EXPOSE 3000
+# Build the application
+RUN pnpm run build
 
-# 7. Define the command to run your app
-CMD ["npm", "start"]
+# Use a lightweight nginx image to serve the static files
+FROM nginx:alpine
+
+# Copy the built app from the previous stage
+COPY --from=0 /app/dist /usr/share/nginx/html
+
+# Expose port 80
+EXPOSE 80
+
+# Start nginx
+CMD ["nginx", "-g", "daemon off;"]
