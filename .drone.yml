@@ -1,21 +1,8 @@
 kind: pipeline
-type: docker
+type: ssh
 name: default
 
 steps:
-  - name: test
-    image: alpine
+  - name: hello
     commands:
-      - echo "Hello, Drone!"
-      - echo "This is a test pipeline."
-      - uname -a
-      - pwd
-      - ls -la
-
-  - name: notify
-    image: alpine
-    commands:
-      - echo "Pipeline completed successfully!"
-    when:
-      status:
-        - success
+      - echo "Hello, World!"
