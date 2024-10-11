@@ -1,14 +1,21 @@
 kind: pipeline
 type: docker
-name: greeting
-##
-steps:
-- name: en
-  image: alpine
-  commands:
-  - echo hello world
+name: default
 
-- name: fr
-  image: alpine
-  commands:
-  - echo bonjour monde
+steps:
+  - name: test
+    image: alpine
+    commands:
+      - echo "Hello, Drone!"
+      - echo "This is a test pipeline."
+      - uname -a
+      - pwd
+      - ls -la
+
+  - name: notify
+    image: alpine
+    commands:
+      - echo "Pipeline completed successfully!"
+    when:
+      status:
+        - success
